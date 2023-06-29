@@ -62,7 +62,7 @@ void enlarge(HashMap * map)
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** anteriorRegistro = map->buckets;
   map->capacity *= 2;
-  map->buckets = (Pair*) calloc(map->capacity, sizeof(Pair));
+  map->buckets = (Pair**) calloc(map->capacity, sizeof(Pair));
 
   map->size = 0;
 
@@ -75,12 +75,6 @@ void enlarge(HashMap * map)
   }
   enlarge_called++;
 }
-
-  
-
-
-}
-
 
 HashMap * createMap(long capacity) {
   HashMap* map = (HashMap*) malloc(sizeof(HashMap));
