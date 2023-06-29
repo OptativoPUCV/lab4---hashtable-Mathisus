@@ -70,3 +70,13 @@ hashmap.c:129:9: error: stray ‘\302’ in program
       |         ^
 Compilation failed
 0e98108
+Thu 29 Jun 2023 03:34:26 AM UTC: 
+ hashmap.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:127:7: error: stray ‘\302’ in program
+  127 | return NULL;
+      |       ^
+Compilation failed
+f26924c
