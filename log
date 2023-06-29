@@ -86,3 +86,18 @@ Thu 29 Jun 2023 03:34:40 AM UTC:
  tests:  16|1
 total_score: 60/70
 1b699ab
+Thu 29 Jun 2023 03:36:21 AM UTC: 
+ hashmap.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:65:16: error: assignment to ‘Pair **’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   65 |   map->buckets = (Pair*) calloc(map->capacity, sizeof(Pair));
+      |                ^
+hashmap.c: At top level:
+hashmap.c:82:1: error: expected identifier or ‘(’ before ‘}’ token
+   82 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6e78bf6
