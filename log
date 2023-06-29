@@ -38,3 +38,19 @@ Thu 29 Jun 2023 02:19:38 AM UTC:
  tests:  11|2
 total_score: 50/70
 ef78f10
+Thu 29 Jun 2023 03:32:19 AM UTC: 
+ hashmap.c | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:127:1: error: stray ‘\302’ in program
+  127 |   return NULL;
+      | ^
+hashmap.c:127:2: error: stray ‘\302’ in program
+  127 |   return NULL;
+      |  ^
+hashmap.c:127:9: error: stray ‘\302’ in program
+  127 |   return NULL;
+      |         ^
+Compilation failed
+05adcb7
